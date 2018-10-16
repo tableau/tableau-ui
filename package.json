@@ -1,0 +1,35 @@
+{
+  "name": "tableau-ui",
+  "version": "0.0.0",
+  "description": "API documentation and samples for Tableau UI.",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -p 8765",
+    "lint": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tableau/tableau-ui.git"
+  },
+  "author": "tableau",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {
+    "semistandard": "^11.0.0"
+  },
+  "semistandard": {
+    "env": {
+      "jquery": true,
+      "browser": true,
+      "tableau": true
+    },
+    "globals": [
+      "tableau"
+    ],
+    "ignore": [
+      "/lib",
+      "/docs"
+    ]
+  }
+}
