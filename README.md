@@ -18,7 +18,7 @@ If you have a TypeScript project you can simply import the components and prop i
 import * as React from 'react';
 import { Button, ButtonProps } from '@tableau/tableau-ui';
 
-const buttonProps: ButtonProps = { styleType: 'outline', children: 'OK' };
+const buttonProps: ButtonProps = { kind: 'outline', children: 'OK' };
 const button = React.createElement(Button, buttonProps);
 ```
 
@@ -27,7 +27,7 @@ If you're using JSX, this example might look more like:
 import * as React from 'react';
 import { Button } from '@tableau/tableau-ui';
 
-const button = <Button styleType='outline'>OK</Button>
+const button = <Button kind='outline'>OK</Button>
 ```
 
 Or, you could also choose to include the bundled javascript file in your web project just as you would any other javascript library. You will then be able to reference tableau-ui with the global `TableauUI` variable, e.g.:
@@ -36,7 +36,7 @@ Or, you could also choose to include the bundled javascript file in your web pro
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script src="tableau-ui.min.js"></script>
 
-const button = React.createElement(TableauUI.Button, { styleType: 'outline', children: 'OK' });
+const button = React.createElement(TableauUI.Button, { kind: 'outline', children: 'OK' });
 ```
 
 ## API Documentation and Samples
