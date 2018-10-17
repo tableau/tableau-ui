@@ -41,4 +41,4 @@ const button = React.createElement(TableauUI.Button, { kind: 'outline', children
 
 ## API Documentation and Samples
 
-Please refer to [Tableau UI Components](http://browser-clients.gitlab.pages.tableausoftware.com/tableau-ui/) for documentation and samples.
+Please refer to [Tableau UI Components](https://tableau.github.io/tableau-ui/) for documentation and samples.
