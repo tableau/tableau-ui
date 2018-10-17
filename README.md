@@ -14,7 +14,7 @@ Tableau UI is a React component library containing UI components which have the 
 Tableau UI requires React. If you aren't familiar with React, check out their [Getting Started](https://reactjs.org/docs/getting-started.html) document.
 
 If you have a TypeScript project you can simply import the components and prop interfaces that you want to use, e.g.:
-```
+```ts
 import * as React from 'react';
 import { Button, ButtonProps } from '@tableau/tableau-ui';
 
@@ -23,7 +23,7 @@ const button = React.createElement(Button, buttonProps);
 ```
 
 If you're using JSX, this example might look more like:
-```
+```jsx
 import * as React from 'react';
 import { Button } from '@tableau/tableau-ui';
 
@@ -31,10 +31,10 @@ const button = <Button styleType='outline'>OK</Button>
 ```
 
 Or, you could also choose to include the bundled javascript file in your web project just as you would any other javascript library. You will then be able to reference tableau-ui with the global `TableauUI` variable, e.g.:
-```
+```js
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<script src="tableau-ui.min.js" />
+<script src="tableau-ui.min.js"></script>
 
 const button = React.createElement(TableauUI.Button, { styleType: 'outline', children: 'OK' });
 ```
