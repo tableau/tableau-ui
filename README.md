@@ -11,7 +11,7 @@ Tableau UI is a React component library containing UI components which have the 
 
 ## Using Tableau UI
 
-Tableau UI requires React. If you aren't familiar with React, check out their ![Getting Started](https://reactjs.org/docs/getting-started.html) document.
+Tableau UI requires React. If you aren't familiar with React, check out their [Getting Started](https://reactjs.org/docs/getting-started.html) document.
 
 If you have a TypeScript project you can simply import the components and prop interfaces that you want to use, e.g.:
 ```
