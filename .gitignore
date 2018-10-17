@@ -1,5 +1,4 @@
 # Dependency directories
 node_modules/
 _site/
-node_modules/
 Gemfile.lock
