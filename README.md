@@ -23,7 +23,7 @@ const button = React.createElement(Button, buttonProps);
 ```
 
 If you're using JSX, this example might look more like:
-```jsx
+```tsx
 import * as React from 'react';
 import { Button } from '@tableau/tableau-ui';
 
