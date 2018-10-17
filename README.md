@@ -30,7 +30,7 @@ import { Button } from '@tableau/tableau-ui';
 const button = <Button styleType='outline'>OK</Button>
 ```
 
-Or, you could also choose to include the bundled javascript file in your web project just as you would any other javascript library. You will then be able to reference tableau-ui with the global `TableauUI` variable within your project, e.g.:
+Or, you could also choose to include the bundled javascript file in your web project just as you would any other javascript library. You will then be able to reference tableau-ui with the global `TableauUI` variable, e.g.:
 ```
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
