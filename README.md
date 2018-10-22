@@ -1,7 +1,7 @@
 # Tableau UI
 [![Tableau Supported](https://img.shields.io/badge/Support%20Level-Tableau%20Supported-53bd92.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
 
-![Tableau UI](./assets/tableau_ui_logo.png)
+![Tableau UI](./assets/tableau_ui_logo.svg)
 
 Tableau UI is a React component library containing UI components which have the look-and-feel of Tableau.
 
