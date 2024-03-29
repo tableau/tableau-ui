@@ -1,6 +1,93 @@
 # Tableau UI Release Notes
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.9.0
+- `Button`, `DropdownSelect`, `Stepper`, `TextArea`, `TextField`
+  - Updated border color.
+- `SideTabs`
+  - New component!
+- `Spinner`
+  - Prop `alt` is now required because this package does not include localized strings by default.
+- `TextFieldGroup`
+  - Minor revisions to styling.
+
+## 3.8.0
+- `Badge`
+  - New component!
+- `Button`
+  - Added `lowEmphasisDark` kind.
+- `Button`, `Checkbox`, `DropdownSelect`, `Radio`, `Stepper`, `Tabs`, `TextArea`, `TextField`, `ToggleSwitch`
+  - Improved accessibility with with higher color contrast ratios across all states as well as an updated focus indicator.
+- `Button`, `Tabs`, `TextLink`, `ToggleSwitch`
+  - Updated focus indicators to use `:focus-visible`
+- `Stepper`
+  - Corrected props typedefs to allow all native `<input>` attributes.
+- `Sticker`
+  - New component!
+- `Tabs`
+  Corrected a keyboard navigation bug when using `'manual'` activation mode.
+- `TextArea`
+  - Added `autoHeight` prop, which causes the `<textarea>` element to grow (or shrink) to fit its content as the user types.
+- `TextArea`, `TextField`
+  - Adjusted wrapping behavior of validation messages.
+- `TextFieldGroup`
+  - New component!
+- `TextLink`
+  - Updated colors and changed hover state to underline.
+
+## 3.7.0
+- `Stepper`
+  - Behavior of the up/down buttons has been corrected in the case that the user has edited, but not yet confirmed, the field value.
+
+## 3.6.0
+- (Corrects an error that only affected Tableau's internal systems.)
+
+## 3.5.0
+### Fixes
+- `Spinner`
+  - Removed previous incorrect advice which suggested the use of `aria-busy`.
+- `TextField`
+  - `type` attribute is now explicitly defaulted to `'text'`, to allow for easier querying.
+- `ToggleSwitch`
+  - Fixed height of right-aligned switches to match left-aligned switches.
+
+## 3.4.0
+### Features
+- `TextLink`
+  - Deprecated `lowEmphasis` kind in favor of `lightweight`. Added new `inline` kind.
+
+- `ToggleSwitch`
+  - New component!
+
+### Fixes
+- `TextField`
+  - A field with unspecified width no longer grows when the clear button is shown.
+
+## 3.3.0
+### Features
+- Added `-webkit-` vendor prefixing for flexbox properties, for better compatibility with certain components of Tableau Desktop.
+
+## 3.2.0
+### Features
+- `Checkbox`
+  - Updated visual style of `indeterminate` checkboxes.
+
+### Fixes
+- Fixed invisible text on disabled input elements in Safari.
+- Pinned the `typestyle` dependency to version `2.0.4` to ensure compatibility with IE11.
+- `Spinner`
+  - Fixed `alt` prop getting applied to the wrong element.
+- `Stepper`
+  - Allow inputting a partial value which falls outside the min/max range.
+- `TextField`/`TextArea`/`DropdownSelect`
+  - Allow long messages to wrap to multiple lines when container is width-constrained.
+  - Improved vertical alignment of validation state icons.
+
+## 3.1.0
+### Features
+- `Stepper`
+  - Allow `value` to be `undefined` when disabled.
+
 ## 3.0.0
 Tableau 2019.4 includes a visual refresh of some UI elements for improved Accessibility. This release of Tableau UI includes updates to match. **In addition, Tableau UI now requires React 16.8 or above.**
 
