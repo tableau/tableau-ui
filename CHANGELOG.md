@@ -1,6 +1,16 @@
 # Tableau UI Release Notes
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.10.0
+- Documentation code samples updated to use standard React hooks.
+- Improved emitted type definitions which depend on `Omit`.
+- `ColorGrid`
+  - New component!
+- `Disclosure`
+  - New component!
+- `SideTabs`
+  - Prop `onChangeTab` deprecated in favor of `onTabChange`, for naming consistency.
+
 ## 3.9.0
 - `Button`, `DropdownSelect`, `Stepper`, `TextArea`, `TextField`
   - Updated border color.
