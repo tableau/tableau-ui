@@ -1,6 +1,18 @@
 # Tableau UI Release Notes
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.12.0
+- `Slider`
+  - New component!
+- `TextField`
+  - Improved accessibility for screen readers.
+
+## 3.11.0
+- `ProgressBar`
+  - New component!
+- `TextField`
+  - The inner `<input>` element now has a default width of `100%`. If this causes issues, use the `style` prop to set a different width.
+
 ## 3.10.0
 - Documentation code samples updated to use standard React hooks.
 - Improved emitted type definitions which depend on `Omit`.
