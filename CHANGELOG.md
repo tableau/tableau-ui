@@ -1,11 +1,15 @@
 # Tableau UI Release Notes
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 3.16.0
+- Corrected icon coloring in dark-mode container elements
+- `TextField`
+  - Corrected padding when `kind="search"`
+
 ## 3.15.0
 - `children` prop type is now explicitly `never` on components which do not render children.
-
-### Fixes
-- Fix `Spinner` dark mode colors
+- `Spinner`
+  - Fix dark mode colors
 
 ## 3.14.0
 - All components now support dark theme (except for `Pill`).
